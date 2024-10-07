@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#sectionOne{
+    background-color: #3B5D50;
+}
+
+#sectionOne .container{
+    max-width: 1400px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between; 
+    padding:20px 20px 0;   
+}
+
+.info{
+    width: 37%;   
+   
+}
+.info h2{
+    font-family: "Poppins";
+    font-weight: 600;
+    font-size: 50px;
+    color:#fff;
+}
+.info p{
+    font-family: "Poppins";
+    font-size: 14px;
+    color:#fff;
+    margin: 20px 0;
+}
+.info .btns{
+    display: flex;
+    gap:20px;
+}
+
+.info .btns button{
+    width: 140px;
+    height: 49px;
+    background-color: orange;
+    border-radius: 20px;
+    border:none;
+    margin:10px 0;
+    color:#000;
+    font-family: "Poppins";
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: .5s all ease;
+
+}
+.info .btns #shop:hover{
+    color:#fff;
+    
+}
+.info .btns #explore{
+    background-color: transparent;
+    border:2px solid grey;
+    color:#fff;
+    
+}
+.info .btns #explore:hover{
+    border:2px solid #fff;
+}
+.image{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.image img{
+    width: 800px;
+    height: 490px;
+    object-fit: cover;
+}
+
+@media(max-width:1200px){
+    .image img{
+        width: 80%;
+        height:80%;
+    }
+    .info h2{
+        font-size: 37px;
+    }
+}
+
+@media(max-width:992px){
+    .info{
+        margin-top:30px;
+    }
+    .logo h2{
+        font-size: 24px;
+    }
+    .image img{
+        width: 87%;
+        height:80%;
+    }
+    .info h2{
+        font-size: 28px;
+    }
+
+}
+
+@media(max-width:768px){
+    #sectionOne .container{
+        display: flex;
+        flex-direction: column;      
+        align-items: center;
+        justify-content: center;
+        margin: 0 auto;
+    }
+    
+   
+    .image img{
+        width: 80%;       
+    }
+    .info{
+        width: 80%;
+        padding:20px 0 0;
+    }
+
+    .info h2{
+        font-size: 33px;
+    }
+}
+
+@media(max-width:600px){
+    .info h2{
+        font-size: 32px;
+    }
+    .info .btns button{
+        width: 100px;
+        height:35px;
+        font-size: 14px;
+    }
+}
+
+

@@ -1,0 +1,274 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    font-family: "Poppins";
+}
+
+footer .container {
+    display: flex;
+    flex-direction: column;
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0 10px;
+}
+
+.footerInfo {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footerImg img {
+    width: 380px;
+    height: 328px;
+}
+
+.newsLetter {
+    display: flex;
+    flex-direction: column;
+}
+
+.envelope {
+    display: flex;
+    align-items: center;
+
+}
+
+.envelope span {
+    font-family: "Poppins";
+    font-size: 18px;
+}
+
+.footerBtns {
+    height: 50px;
+    display: flex;
+    align-items: center;
+}
+
+.footerBtns #name,
+#email {
+    width: 253px;
+    height: 100%;
+    background-color: rgba(145, 145, 145, 0.352);
+    border-radius: 10px;
+    font-size: 14px;
+    padding: 10px;
+    border: none;
+}
+
+.footerBtns #email {
+    margin: 0 20px;
+}
+
+.footerBtns #submit {
+    width: 93px;
+    height: 100%;
+    border-radius: 10px;
+    background-color: #314D43;
+    color: #fff;
+    font-size: 18px;
+}
+
+.footerIcon {
+    width: 400px;
+    font-family: "Poppins";
+}
+
+.footerIcon h3 {
+    font-size: 30px;
+}
+
+.footerIcon p {
+    font-weight: 400;
+    font-size: 14px;
+}
+
+.footerNav {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.footerBody {
+    width: 60%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footerSocials {
+    display: flex;
+    gap: 15px;
+    margin: 10px 0 0;
+}
+
+.footerSocials li {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #DCE5E4;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.footerSocials li a {
+    color: #3B5D50;
+}
+
+.footerNav .footerLinks {
+    display: flex;
+    flex-direction: column;
+}
+
+.footerLinks li,
+h3 {
+    margin: 10px 0;
+}
+
+.footerLinks li a {
+    font-size: 14px;
+    color: #000;
+}
+
+.copyright {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 0;
+    margin: 20px 0 0;
+    border-top: 1px solid #6a6a6a5d;
+}
+
+.copyright h5,
+a {
+    color: #6a6a6a;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+#privacy {
+    display: flex;
+    gap: 15px;
+}
+
+@media(max-width:1200px) {
+    .footerInfo {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .footerImg img {
+        width: 296px;
+        height: 286px;
+    }
+
+    .footerIcon {
+        width: 80%;
+    }
+
+    .footerNav {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .footerBody {
+        width: 80%;
+    }
+
+}
+
+@media(max-width:992px) {
+    .copyright {
+        display: flex;
+        gap: 10px;
+        flex-direction: column;
+        align-items: start;
+
+    }
+
+    .footerImg {
+        margin: 30px 0 0 0;
+    }
+}
+
+@media(max-width:768px) {
+    footer .container {
+        justify-content: center;
+    }
+
+    .copyright h5,
+    a {
+        font-size: 12px;
+    }
+
+    .footerBtns #name,
+    #email {
+        width: 197px;
+
+    }
+
+    .footerBtns #submit {
+        width: 68px;
+    }
+
+  
+}
+
+@media(max-width:600px) {
+    .footerBtns {
+        display: flex;
+        align-items: center;
+    }
+
+    .footerBtns #name,
+    #email {
+        width: 337px;
+        height: 50px;
+    }
+
+    .envelope {
+        margin-bottom: 20px;
+    }
+
+    .footerBtns #submit {
+        width: 78px;
+        height: 50px;
+    }
+
+    .footerBtns {
+        flex-direction: column;
+        gap: 30px;
+        height: auto;
+    }
+
+    .footerImg {
+        display: none;
+    }
+
+    .footerBtns #email {
+        margin: 0;
+    }
+
+    .footerBody {
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+    }
+    .copyright h5{
+       
+    }
+    /* #privacy{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    } */
+
+}
